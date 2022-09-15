@@ -25,6 +25,6 @@ while 1:
     try:
         (task, pid, cpu, flags, ts, msg) = b.trace_fields()  # (task, pid, cpu, flags, ts, msg)
         if "python" in task:
-            print("{} {} {} {}".format(ts,cpu,pid,task)
+            print("{} {} {} {}".format(ts,cpu,pid,task))
     except KeyboardInterrupt:
         exit()
