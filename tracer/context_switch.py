@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # trace context switch
 
@@ -24,7 +24,7 @@ print("%-18s %-16s %-6s %s" % ("TIME(s)", "TASK", "PID", "CPU"))
 while 1:
     try:
         (task, pid, cpu, flags, ts, msg) = b.trace_fields()  # (task, pid, cpu, flags, ts, msg)
-	if "python" in task:
-	    print("{} {} {} {}".format(ts,cpu,pid,task")
+        if "python" in task:
+            print("{} {} {} {}".format(ts,cpu,pid,task)
     except KeyboardInterrupt:
         exit()
